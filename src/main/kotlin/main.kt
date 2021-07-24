@@ -14,18 +14,18 @@ fun total(transfer: String) : Double{
 fun vkCalculate(amount: Double): Double {
     return 0.0
 }
-    fun visaMirCalculate(amount: Double) : Double{
-        val minTaxVisaMir = 3_500.0
-        val taxVisaMir = 0.0075
-        val totalTaxVisaMir = amount * taxVisaMir
-        val result = amount * taxVisaMir
-        if (totalTaxVisaMir > minTaxVisaMir) {
-                return result
-            }
-        return minTaxVisaMir
+fun visaMirCalculate(amount: Double): Double{
+    val minTaxVisaMir = 3_500.0
+    val taxVisaMir = 0.0075
+    val totalTaxVisaMir = amount * taxVisaMir
+    if (totalTaxVisaMir > minTaxVisaMir) {
+        return totalTaxVisaMir
     }
+    return minTaxVisaMir
+}
 
-    fun masterMaestroCalculate(amount: Double) : Double{
+
+fun masterMaestroCalculate(amount: Double) : Double{
         val taxMasterMaestro = 0.0
         val taxMasterMaestroLimit = 0.006 * amount + 2_000.0
         val limitMasterMaestro = 7_500_000.0
