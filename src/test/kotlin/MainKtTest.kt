@@ -14,7 +14,7 @@ class MainKtTest {
 
         val result = visaMirCalculate(amount)
 
-        assertEquals(337_500.0, result, 0.0)
+        assertEquals(337_501.0, result, 0.0)
     }
 
     @Test
@@ -26,7 +26,7 @@ class MainKtTest {
 
         val result = visaMirCalculate(minTaxVisaMir)
 
-        assertEquals(3_500.0, result, 0.0)
+        assertEquals(3_501.0, result, 0.0)
     }
 
 
@@ -40,6 +40,6 @@ class MainKtTest {
 
         val tax = masterMaestroCalculate(amount)
 
-        assertEquals(272_000.0, tax, 0.0)
+        assertEquals(272_001.0, tax, 0.0)
     }
 }
